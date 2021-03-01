@@ -13,7 +13,7 @@ closePopup.addEventListener('click',()=>{
 
 
 
-const url = process.env.API_URL
+const url = "https://zealous-jennings-bae45b.netlify.app/.netlify/functions/hello-world"
 
 // get request
 fetch(url)
