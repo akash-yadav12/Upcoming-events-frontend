@@ -11,9 +11,12 @@ closePopup.addEventListener('click',()=>{
   addEventsPopup.classList.remove('active')
 })
 
-API_URL = "/.netlify/functions/server/api"
+
+
+const url = process.env.API_URL
+
 // get request
-fetch(API_URL)
+fetch(url)
   .then(async (res) => {
     // console.log(res.json())
     const events =await res.json()
