@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      Competetive Events
+    </div>
+  </nav>
+  <div class="add-events-popup">
+    <div class="close">&#10006;</div>
+    <form onsubmit="return false">
+      <label for="event-name">Event-Name</label>
+      <input type="text" name="name" required placeholder="Name">
+      <label for="date">Enter Date</label>
+      <input type="date" name="date" required>
+      <label for="time">Enter Time</label>
+      <input type="text" placeholder="Time" name="time" required>
+      <label for="link">Registration Link</label>
+      <input type="text" placeholder="Link" name="link" required>
+      <label for="msg">Description</label>
+      <input type="text" placeholder="description" name="msg" required>
+    <button type="submit" id="btn-submit">Add Event</button>
+    </form>
+  </div>
+
+  <div class="events-container">
+    <!-- All events will appear here -->
+  </div>
+  <button class="btn" id="add-btn">Add new Event</button>
+
+
+
+<script>
+  
+
+</script>
+
+</body>
+</html>
+
