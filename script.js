@@ -50,7 +50,7 @@ const form = document.querySelector('form')
 submitBtn.addEventListener('click',()=>{
   //POST REQUEST 
   formd = new FormData(form);
-  fetch(API_URL,{
+  fetch(url,{
     method: 'POST',
     body: JSON.stringify({
       name: formd.get("name"),
